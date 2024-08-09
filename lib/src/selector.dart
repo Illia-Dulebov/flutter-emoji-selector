@@ -220,29 +220,6 @@ class _EmojiSelectorState extends State<EmojiSelector> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
-            height: 32.0,
-            child: TextField(
-              controller: _controller,
-              onChanged: searchEmoji,
-              cursorColor: Colors.grey,
-              style: TextStyle(fontSize: 12),
-              decoration: InputDecoration(
-                isDense: true,
-                contentPadding: EdgeInsets.zero,
-                filled: true,
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide.none),
-                hintText: 'Search Emoji',
-                hintStyle: TextStyle(color: Colors.grey, fontSize: 12),
-                prefixIcon: Container(
-                  child: Icon(Icons.search),
-                  width: 16,
-                ),
-              ),
-            ),
-          ),
           SizedBox(height: 4),
           if (widget.withTitle)
             Text(
